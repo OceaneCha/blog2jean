@@ -1,0 +1,14 @@
+{% extends 'layout.html.twig' %}
+
+{% block contents %}
+<div class="card bg-dark text-light mt-5">
+<div class="card-body"><h2 class="card-title">Mes articles</h2>
+<ul>
+    {% for article in articles %}
+    <li><a class="link-warning" href="show?id={{ article.id }}">{{ article.title }}</a></li>
+    {% endfor %}
+</ul>
+<br>
+<a class="link-warning" href="add">Add</a></div>
+</div>
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends 'layout.html.twig' %}
+
+{% block contents %}
+<div class="card bg-dark text-light mt-5">
+<div class="card-body">
+<h2 class="card-title">{{ article.title }}</h2>
+<p class="card-text">{{ article.content }}</p>
+<br/>
+<div><a class="link-warning" href="/">Back</a> | <a class="link-warning" href="show/edit?id={{ article.id }}">Edit</a></div>
+</div>
+</div>
+{% endblock %}
